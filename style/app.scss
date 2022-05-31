@@ -1,0 +1,240 @@
+@import "_fonts";
+@import "_null";
+@import "_classes";
+
+.header{
+   display: flex;
+   background-color:#121211;
+   position: relative;
+   height: 100px;
+   &__inner{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 20px solid transparent;
+    border-right: 30px solid #FFFFFF;
+   }
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    
+    &__tournament{
+        padding-top: 100px;
+        background-color:#252226;
+        
+        // 900px
+        .tournament__img--900{
+            display: none;
+        }
+        // 900px
+
+        .tournament__inner{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+            .tournament__info{
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                
+                .tournament__characteristic{
+                    margin-left: 100px;
+                    font-weight: 500;
+                    font-size: 36px;
+                    color: #FFFFFF;
+                    .characteristic{
+                        margin-top: 40px;
+                    }
+                    .characteristic:first-child{
+                        margin-top: 0px;
+                    }
+                }
+                .tournament__answer{
+                    font-weight: 500;
+                    font-size: 36px;
+                    color: #FFFFFF;
+                    .answer{
+                        margin-top: 40px;
+                        .answer__nav{
+                            text-decoration: none;
+                            color:#FFFFFF;
+                            font-size: 20px;
+                            cursor: pointer;
+                        }
+                    }
+                    .answer:first-child{
+                        margin-top: 0px;
+                    }
+                }
+            }
+            .tournament__img{
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                
+                .img__inner{   
+                    margin-right: 50px;
+                    margin-left: 50px;          
+                    .tournament-photo{
+
+                        width: 100%;
+                        max-width: 550px;
+                    }   
+                }
+            }
+        }
+        .tournament__btn{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            .participate{
+                width: 50%;
+                display:flex;
+                justify-content: center;
+                .participate__btn{
+                    background: #EFCB10;
+                    padding: 15px 20px;
+                    font-weight: 500;
+                    font-size: 48px;
+                    color: #0C0B0B;
+                    cursor: pointer;
+                }
+            }
+        }
+        .tournament__title{
+            margin-top: 150px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 96px;
+        }
+    }
+    .main__team{
+        background-color:#919090;
+        .team__title{
+            margin-top: 100px;
+            color:#FFFFFF;
+            font-weight: 500;
+            font-size: 96px;
+            text-align: right;
+            margin-right: 80px
+        }
+        .tournament__grid{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 150px;
+            .grid{
+                width: 33.33333%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                .group-block{
+                    display: flex;
+                    justify-content: center;
+                    align-items:center;
+                    text-align: center;
+                    margin-top: 60px;
+                    .team{
+                        padding-left: 80px;
+                        padding-right: 80px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+
+                        font-weight: 500;
+                        font-size: 48px;
+                        color: #FFFFFF;
+                    }
+                    .team-status{
+                        font-weight: 500;
+                        font-size: 48px;
+                        background-color:#252226;
+                    }
+                }
+                .group-block:first-child{
+                    margin-top: 0px;
+                }
+            }
+
+        }
+    }
+    &__final{
+        padding-top: 100px;
+        background-color:#919090;
+        .team__title{
+            color:#FFFFFF;
+            font-weight: 500;
+            font-size: 96px;
+            text-align: right;
+            margin-right: 80px
+        }
+        .final__grid{
+            margin-top: 150px;
+            display: flex;
+            flex-wrap: wrap;
+            .grid-team{
+                width: 50%;
+                display:flex;
+                flex-direction: column;
+                
+                .group-block{
+                    margin-right: 80px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items:center;
+                    text-align: center;
+                    margin-top: 100px;
+                    .team{
+                        padding-left: 80px;
+                        padding-right: 80px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+
+                        font-weight: 500;
+                        font-size: 48px;
+                        color: #FFFFFF;
+                    }
+                    .team-status{
+                        font-weight: 500;
+                        font-size: 48px;
+                        background-color:#252226;
+                    }
+                }
+                .group-block:first-child{
+                    margin-top: 0px;
+                }
+            }
+            .grid-winner{
+                width: 50%;
+                display:flex;
+                
+                .group-block{
+                    position: relative;
+                    margin-left: 80px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items:center;
+                    text-align: center;
+                    .team{
+                        padding-left: 80px;
+                        padding-right: 80px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+
+                        font-weight: 500;
+                        font-size: 48px;
+                        color: #FFFFFF;
+                    }
+                    .img-star{
+                        position: absolute;
+                        right: -55px;
+                        top: 35px;
+                    }
+                }   
+            }
+        }
+    }
+}
+
+@import "_adaptive.scss";

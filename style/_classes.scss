@@ -1,0 +1,44 @@
+.container{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.main-container{
+    background-color:#252226
+}
+.status-group-red{
+    color:rgba(237, 53, 13, 1);
+    padding: 10px 25px;
+}
+.status-group-green{
+    color:rgba(20, 228, 78, 1);
+    padding: 10px 15px
+}
+@media (max-width:750px){
+    .status-group-red{
+        padding: 10px 12px;
+    }
+    .status-group-green{
+        padding: 10px 10px
+    }
+}
+.team-balck{
+    background-color:#252226;
+}
+.team-white{
+    background-color:#C4C4C4;
+}
+.margin-top{
+    margin-top: 140px;
+}
+@media(max-width:480px){
+    .margin-top{
+        margin-top:60px;
+    }
+    .status-group-red{
+        padding: 5px 12px;
+    }
+    .status-group-green{
+        padding: 5px 10px
+    }
+}
